@@ -49,20 +49,20 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. **Generate secret key
+4. **Generate secret key**
    - Using Python
-     ```python
-     import secrets
+  ```python
+  import secrets
 
-     # Generate a random 32-byte (256-bit) secret key
-     secret_key = secrets.token_hex(32)
-     print(secret_key)
-     ```
+  # Generate a random 32-byte (256-bit) secret key
+  secret_key = secrets.token_hex(32)
+  print(secret_key)
+  ```
 
    - Using OpenSSL
-     ```bash
-     openssl rand -hex 32
-     ``` 
+  ```bash
+  openssl rand -hex 32
+  ``` 
 
 6. **Environment Configuration**
 Create a `.env` file in the project root:
