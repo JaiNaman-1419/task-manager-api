@@ -49,25 +49,40 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. **Environment Configuration**
+4. **Generate secret key
+   - Using Python
+     ```python
+     import secrets
+
+     # Generate a random 32-byte (256-bit) secret key
+     secret_key = secrets.token_hex(32)
+     print(secret_key)
+     ```
+
+   - Using OpenSSL
+     ```bash
+     openssl rand -hex 32
+     ``` 
+
+6. **Environment Configuration**
 Create a `.env` file in the project root:
 ```env
 SECRET_KEY=your-super-secret-key-here
 DEBUG=True
 ```
 
-5. **Run migrations**
+6. **Run migrations**
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-6. **Create superuser (optional)**
+7. **Create superuser (optional)**
 ```bash
 python manage.py createsuperuser
 ```
 
-7. **Start the development server**
+8. **Start the development server**
 ```bash
 python manage.py runserver
 ```
