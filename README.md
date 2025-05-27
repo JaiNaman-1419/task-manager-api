@@ -50,7 +50,7 @@ pip install -r requirements.txt
 ```
 
 4. **Generate secret key**
-   - Using Python
+- Using Python
   ```python
   import secrets
 
@@ -59,12 +59,12 @@ pip install -r requirements.txt
   print(secret_key)
   ```
 
-   - Using OpenSSL
+- Using OpenSSL
   ```bash
   openssl rand -hex 32
   ``` 
 
-6. **Environment Configuration**
+5. **Environment Configuration**
 Create a `.env` file in the project root:
 ```env
 SECRET_KEY=your-super-secret-key-here
