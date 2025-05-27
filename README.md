@@ -26,7 +26,7 @@ A comprehensive RESTful API for managing tasks with user authentication, built w
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.13+
 - pip
 - virtualenv (recommended)
 
